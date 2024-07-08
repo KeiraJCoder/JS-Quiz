@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible"IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>JavaScript Quiz</title>
@@ -16,12 +16,10 @@
             <h1>JavaScript Quiz</h1>
             <p>Welcome to our JavaScript Quiz, a key feature of our programming curriculum designed to assess your knowledge and skills in JavaScript.<br><br> There's no pressure, as this quiz isn't graded. It's an excellent opportunity to practice and demonstrate your grasp of JavaScript basics, including variables, functions, loops, and ES6 features, as well as your ability to manipulate the DOM and handle events.<br><br> Submit your answers for each question to see immediate feedback on how you're doing. <br><br>When you're through, simply enter your name and submit to complete the exercise. Enjoy the challenge!</p>
 
-
-
             <!-- Question 1 - JavaScript in HTML -->
             <form id="myForm1" onsubmit="check1(); return false" autocomplete="off">
                 <h2>Task 1</h2>
-                <p>Inside which HTML element do we put the JavaScript?</p>
+                <p>How do we link a JavaScript file in HTML?</p>
                 <input type="text" id="q1"><br>
                 <button id="one" class="btn" type="submit">Submit</button>
             </form>
@@ -31,21 +29,21 @@
                 <h2>Task 2</h2>
                 <p>Where is the correct place to insert a JavaScript?</p>
                 <ul>
-                    <li>a) The &lt;body&gt; section</li>
-                    <li>b) The &lt;head&gt; section</li>
-                    <li>c) Both a and b are correct</li>
+                    <li><input type="radio" name="q2" value="a"> The &lt;body&gt; section</li>
+                    <li><input type="radio" name="q2" value="b"> The &lt;head&gt; section</li>
+                    <li><input type="radio" name="q2" value="c"> Both a and b are correct</li>
                 </ul>
-                <input type="text" id="q2"><br>
                 <button id="two" class="btn" type="submit">Submit</button>
             </form>
 
-            <!-- Question 3 - External JavaScript file -->
+            <!-- Question 3 - Creating a Variable -->
             <form id="myForm3" onsubmit="check3(); return false" autocomplete="off">
                 <h2>Task 3</h2>
-                <p>How do you link to an external JavaScript file?</p>
+                <p>How do you create a variable named "x" with the value 10 in JavaScript?</p>
                 <input type="text" id="q3"><br>
                 <button id="three" class="btn" type="submit">Submit</button>
             </form>
+
 
             <!-- Question 4 - Display an alert -->
             <form id="myForm4" onsubmit="check4(); return false" autocomplete="off">
@@ -58,7 +56,7 @@
             <!-- Question 5 - Create a function -->
             <form id="myForm5" onsubmit="check5(); return false" autocomplete="off">
                 <h2>Task 5</h2>
-                <p>How do you create a function in JavaScript?</p>
+                <p>What word do you need to write before defining a new function?</p>
                 <input type="text" id="q5"><br>
                 <button id="five"class="btn" type="submit">Submit</button>
             </form>
@@ -84,7 +82,7 @@
                 <h2>Task 8</h2>
                 <p>How do you write a comment in JavaScript?</p>
                 <input type="text" id="q8"><br>
-                <button id="eight"class="btn" type="submit">Submit</button>
+                <button id="eight" class="btn" type="submit">Submit</button>
             </form>
 
             <!-- Question 9 - Declare a variable -->
@@ -98,13 +96,12 @@
             <!-- Question 10 - Conditional Statement -->
             <form id="myForm10" onsubmit="check10(); return false" autocomplete="off">
                 <h2>Task 10</h2>
-                <p>How do you create an if statement in JavaScript?</p>
+                <p>What word needs to be used to start a conditional statement in JavaScript?</p>
                 <input type="text" id="q10"><br>
                 <button id="ten" class="btn" type="submit">Submit</button>
             </form>
-            
 
-                         <!-- Question 11 - Using Console.log -->
+            <!-- Question 11 - Using Console.log -->
             <form id="myForm11" onsubmit="check11(); return false" autocomplete="off">
                 <h2>Task 11</h2>
                 <p>How do you log the message "Hello, console!" to the browser's console?</p>
@@ -184,8 +181,6 @@
                 <button id="twenty" class="btn" type="submit">Submit</button>
             </form>
 
-
-
             <!-- Question 21 - Arrow Functions Simplified -->
             <form id="myForm21" onsubmit="check21(); return false" autocomplete="off">
                 <h2>Task 21</h2>
@@ -194,11 +189,10 @@
                 <button id="twenty-one" class="btn" type="submit">Submit</button>
             </form>
 
-
             <!-- Question 22 - Async Function -->
             <form id="myForm22" onsubmit="check22(); return false" autocomplete="off">
                 <h2>Task 22</h2>
-                <p>What keyword is used to declare an asynchronous function?</p>
+                <p>What keyword needs to be used to declare an asynchronous function?</p>
                 <input type="text" id="q22"><br>
                 <button id="twenty-two" class="btn" type="submit">Submit</button>
             </form>
@@ -206,10 +200,11 @@
             <!-- Question 23 - Promises -->
             <form id="myForm23" onsubmit="check23(); return false" autocomplete="off">
                 <h2>Task 23</h2>
-                <p>Which object is used for asynchronous computations in JavaScript?</p>
-                <input type="text" id="q23"><br>
+                <p>What object in JavaScript represents the eventual completion (or failure) of an asynchronous operation and its resulting value?</p>
+                <input type="text" id="q23" placeholder="Enter the object name"><br>
                 <button id="twenty-three" class="btn" type="submit">Submit</button>
             </form>
+
 
             <!-- Question 24 - Fetch API -->
             <form id="myForm24" onsubmit="check24(); return false" autocomplete="off">
@@ -244,61 +239,53 @@
                 <button id="twenty-seven" class="btn" type="submit">Submit</button>
             </form>
 
-
             <!-- Question 28 - Local Storage -->
             <form id="myForm28" onsubmit="check28(); return false" autocomplete="off">
                 <h2>Task 28</h2>
                 <p>How do you store a value 'hello' with the key 'greeting' in local storage?</p>
                 <input type="text" id="q28"><br>
-                <button id="twenty-eight"class="btn" type="submit">Submit</button>
+                <button id="twenty-eight" class="btn" type="submit">Submit</button>
             </form>
 
             <!-- Question 29 - Removing DOM Elements Simplified -->
-        <form id="myForm29" onsubmit="check29(); return false" autocomplete="off">
-            <h2>Task 29</h2>
-            <p>Complete the JavaScript line to remove an element with the ID 'toRemove' from the document. Start with: <code>document.getElementById('toRemove').</code></p>
-            <input type="text" id="q29" placeholder="___;"><br>
-            <button id="twenty-nine" class="btn" type="submit">Submit</button>
-        </form>
-
+            <form id="myForm29" onsubmit="check29(); return false" autocomplete="off">
+                <h2>Task 29</h2>
+                <p>Complete the JavaScript line to remove an element with the ID 'toRemove' from the document. Start with: <code>document.getElementById('toRemove').</code></p>
+                <input type="text" id="q29" placeholder="___;"><br>
+                <button id="twenty-nine" class="btn" type="submit">Submit</button>
+            </form>
 
             <!-- Question 30 - Understanding DOM -->
-        <form id="myForm30" onsubmit="check30(); return false" autocomplete="off">
-            <h2>Task 30</h2>
-            <p>What does "DOM" stand for in web development?</p>
-            <input type="text" id="q30"><br>
-            <button id="thirty" class="btn" type="submit">Submit</button>
-        </form>
-
-
-
-
-
-<!-- ----------------------------------------------------------------------------------- -->
+            <form id="myForm30" onsubmit="check30(); return false" autocomplete="off">
+                <h2>Task 30</h2>
+                <p>What does "DOM" stand for in web development?</p>
+                <input type="text" id="q30"><br>
+                <button id="thirty" class="btn" type="submit">Submit</button>
+            </form>
 
             <!-- Floating Score and Timer -->
             <div id="floating-score">Score: 0</div>
             <div id="timer-display" style="position: fixed; top: 10px; right: 10px;">00:00</div>
 
-           <!-- Submit Form -->
-<form id="submitForm" action="https://formspree.io/f/xzbnvraq" method="POST">
-    <div class="inputs-container">
-        <label>
-            <p>Name:</p>
-            <input type="text" placeholder="Enter name" id="name" name="Name" required>
-        </label>
-        <label>
-            <p>Score:</p>
-            <input type="text" id="score" name="Score" placeholder="" readonly class="disabled-input">
-        </label>
-        <label>
-            <p>Time:</p>
-            <input type="text" id="timer" name="Time" placeholder="" readonly class="disabled-input">
-        </label>
-        <input type="hidden" id="correct-answers" name="CorrectAnswers">
-    </div>
-    <button class="btn2" type="submit">Submit Score</button>
-</form>
+            <!-- Submit Form -->
+            <form id="submitForm" action="https://formspree.io/f/xzbnvraq" method="POST">
+                <div class="inputs-container">
+                    <label>
+                        <p>Name:</p>
+                        <input type="text" placeholder="Enter name" id="name" name="Name" required>
+                    </label>
+                    <label>
+                        <p>Score:</p>
+                        <input type="text" id="score" name="Score" placeholder="" readonly class="disabled-input">
+                    </label>
+                    <label>
+                        <p>Time:</p>
+                        <input type="text" id="timer" name="Time" placeholder="" readonly class="disabled-input">
+                    </label>
+                    <input type="hidden" id="correct-answers" name="CorrectAnswers">
+                </div>
+                <button class="btn2" type="submit">Submit Score</button>
+            </form>
         </div>
     </div>
     <script src="obfuscate.js"></script>
